@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen Club Selm</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
+      text-align: center;
+    }
+    header {
+      background: url('bilder/header.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 140px 20px;
+    }
+    header h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    header h2 {
+      font-size: 28px;
+      margin: 10px 0;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    .gallery img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    audio {
+      margin: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: left;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #222;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #444;
+    }
+    .social {
+      margin-top: 30px;
+    }
+    .social a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social img {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KITCHEN CLUB</h1>
+    <h2>Covermusik rund um Selm</h2>
+  </header>
+
+  <section>
+    <p>Schön, dass du zu uns gefunden hast!</p>
+    <p>
+      Wir sind 6 Musiker, die es sich zur Aufgabe gemacht haben,
+      Feste mit guter Laune und toller Stimmung musikalisch zu begleiten.
+      Unser Repertoire umfasst überwiegend Pop- und Rocksongs der 80er- und 90er-Jahre.
+    </p>
+    <p>
+      Gerne begleiten wir auch deine nächste Veranstaltung!<br>
+      Kontaktiere uns gerne über das Formular weiter unten.
+    </p>
+  </section>
+
+  <section>
+    <div class="gallery">
+      <img src="bilder/instrument1.jpg" alt="Instrument 1">
+      <img src="bilder/instrument2.jpg" alt="Instrument 2">
+      <img src="bilder/instrument3.jpg" alt="Instrument 3">
+      <img src="bilder/instrument4.jpg" alt="Instrument 4">
+    </div>
+
+    <div>
+      <audio controls>
+        <source src="musik/song1.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls>
+        <source src="musik/song2.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls>
+        <source src="musik/song3.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls>
+        <source src="musik/song4.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </section>
+
+  <section>
+    <h3>📧 Kontaktiere uns</h3>
+    <form action="mailto:DEINE-EMAIL@beispiel.de" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Dein Name" required>
+      <input type="email" name="email" placeholder="Deine E-Mail" required>
+      <textarea name="message" rows="5" placeholder="Deine Nachricht..." required></textarea>
+      <button type="submit">Nachricht senden</button>
+    </form>
+
+    <div class="social">
+      <p><strong>Folge uns auch auf den sozialen Medien</strong></p>
+      <a href="https://facebook.com/deinbandprofil" target="_blank">
+        <img src="icons/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/deinbandprofil" target="_blank">
+        <img src="icons/instagram.png" alt="Instagram">
+      </a>
+    </div>
+  </section>
+</body>
+</html>
