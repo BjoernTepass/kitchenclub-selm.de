@@ -55,39 +55,26 @@
       border-radius: 5px;
     }
     audio {
-      margin: 1px;
+      margin: 2px;
     }
     .small-heading {
       font-size: 18px;
       font-weight: bold;
-      margin: 5px 0;
+      margin: 10px 0 5px 0;
     }
     audio:last-of-type {
       margin-bottom: 5px;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 400px;
-      margin: 5px auto;
-      text-align: left;
-      margin-bottom: 20px;
+    .contact {
+      margin-top: 20px; 
     }
-    input, textarea, button {
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    .contact a {
+      margin: 0 10px;
+      display: inline-block;
     }
-    button {
-      background: #222;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    button:hover {
-      background: #444;
+    .contact img {
+      width: 80px;
+      height: 80px;
     }
     .social {
       margin-top: 20px;
@@ -100,19 +87,18 @@
       width: 60px;
       height: 60px;
     }
-    .contact {
-      margin-top: 0px; 
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
     }
-    .contact a {
+    footer a {
       margin: 0 10px;
-      display: inline-block;
+      text-decoration: none;
+      color: #222;
     }
-    .contact img {
-      width: 80px;
-      height: 80px;
-    }
-    .audio-container {
-      margin-bottom: 0px; 
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -136,6 +122,7 @@
   </header>
   
   <section>
+    <!-- Galerie -->
     <div class="gallery">
       <img src="bilder/instrument1.jpg" alt="Instrument 1">
       <img src="bilder/instrument2.jpg" alt="Instrument 2">
@@ -145,6 +132,7 @@
       <img src="bilder/instrument6.jpg" alt="Instrument 6">
     </div>
 
+    <!-- Hörproben -->
     <div class="audio-container">
       <div><strong class="small-heading">Hörproben</strong></div>
       <audio controls>
@@ -157,9 +145,8 @@
         <source src="musik/song3.mp3" type="audio/mpeg">
       </audio>
     </div>
-  </section>
-  
-  <section>
+
+    <!-- Kontakt -->
     <div class="contact">
       <p class="small-heading">Kontaktmöglichkeiten</p>
       <a href="mailto:webmaster@kitchenclub-selm.de" method="post" enctype="text/plain">
@@ -173,12 +160,13 @@
       </a>
     </div>
     
+    <!-- Social Media -->
     <div class="social">
       <p class="small-heading">Folge uns auch auf den sozialen Medien</p>
       <a href="https://facebook.com/band.kitchen.club" target="_blank">
         <img src="bilder/facebook.png" alt="Facebook">
       </a>
-      <a href="https://www.instagram.com/kitchen_club_selm/?igsh=d2pleDUzZGdwdHk%3D&utm_source=gr" target="_blank">
+      <a href="https://www.instagram.com/kitchen_club_selm" target="_blank">
         <img src="bilder/instagram.jpeg" alt="Instagram">
       </a>
     </div>
