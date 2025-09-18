@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title style="color: black;">Kitchen Club Selm</title>
+  <title>Kitchen Club Selm</title>
   <style>
     body {
       margin: 0;
@@ -36,7 +36,6 @@
       color: black;
     }
     section {
-      font-size: 12px;
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
@@ -57,6 +56,16 @@
     }
     audio {
       margin: 1px;
+    }
+    /* Kleine Überschriften */
+    .small-heading {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    /* Letztes Audio-Element weniger Abstand */
+    audio:last-of-type {
+      margin-bottom: 5px;
     }
     form {
       display: flex;
@@ -83,7 +92,7 @@
       background: #444;
     }
     .social {
-      margin-top: 30px;
+      margin-top: 20px;
     }
     .social a {
       margin: 0 10px;
@@ -94,7 +103,7 @@
       height: 60px;
     }
     .contact {
-      margin-top: 10px; 
+      margin-top: 5px; 
     }
     .contact a {
       margin: 0 10px;
@@ -114,15 +123,15 @@
     <h1>KITCHEN CLUB</h1>
     <h2>Coverband aus Selm</h2>
     <br>
-    <p class="intro-text" style="color: black;"> Schön, dass du zu uns gefunden hast! </p>
+    <p class="intro-text">Schön, dass du zu uns gefunden hast!</p>
     <br>
-    <p class="intro-text" style="color: black;">
+    <p class="intro-text">
       Wir sind 6 Musiker, die es sich zur Aufgabe gemacht haben,
       Feste mit guter Laune und toller Stimmung musikalisch zu begleiten.<br>
       Unser Repertoire umfasst überwiegend Pop- und Rocksongs der 80er- und 90er-Jahre.
     </p>
     <br>
-    <p class="intro-text" style="color: black;">
+    <p class="intro-text">
       Gerne begleiten wir auch deine nächste Veranstaltung!<br>
       Kontaktiere uns gerne über das Formular weiter unten.
     </p>
@@ -139,7 +148,7 @@
     </div>
 
     <div class="audio-container">
-      <div font-size: 12px;><strong>Hörproben:</strong></div>
+      <div><strong class="small-heading">Hörproben:</strong></div>
       <audio controls>
         <source src="musik/song1.mp3" type="audio/mpeg">
       </audio>
@@ -154,7 +163,7 @@
   
   <section>
     <div class="contact">
-      <p font-size: 12px;><strong>Kontaktmöglichkeiten</strong></p>
+      <p class="small-heading">Kontaktmöglichkeiten</p>
       <a href="mailto:webmaster@kitchenclub-selm.de" method="post" enctype="text/plain">
         <img src="bilder/Mail.png" alt="E-Mail">
       </a>
@@ -167,7 +176,7 @@
     </div>
     
     <div class="social">
-      <p font-size: 12px;><strong>Folge uns auch auf den sozialen Medien</strong></p>
+      <p class="small-heading">Folge uns auch auf den sozialen Medien</p>
       <a href="https://facebook.com/band.kitchen.club" target="_blank">
         <img src="bilder/facebook.png" alt="Facebook">
       </a>
@@ -179,7 +188,7 @@
 
   <footer>
     <p>
-      <a href="impressum.html">Impressum</a>
+      <a href="impressum.html">Impressum</a> |
       <a href="datenschutz.html">Datenschutzerklärung</a>
     </p>
   </footer>
